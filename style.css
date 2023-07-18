@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+.visor1, .visor2 {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+}
+
+.visor1 {
+    background-color: white;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Aquí modificamos la propiedad grid-template-rows para que tenga 5 filas */
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.boton {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+
+/* Aquí borramos el bloque de código del footer */
+
+
+
+
+
+/* Ocultar los inputs de radio por defecto 
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo del indicador de selección 
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 10px; /* Espacio para el indicador 
+    cursor: pointer;
+}
+
+
+input[type="radio"] + label:before {
+    display: none;
+}
+
+/* Estilo del indicador cuando el input está marcado 
+input[type="radio"]:checked + label:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente 
+    width: 3px; /* Ancho de la línea 
+    height: 80%; /* Altura de la línea
+    background-color: #00f; /* Puedes cambiar el color cuando está seleccionado 
+    
+}
+

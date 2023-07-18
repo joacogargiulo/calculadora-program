@@ -1,4 +1,60 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="visor2">0</div>
+        <div class="visor1">0</div>
+        <div id="conversores">
+            <input type="radio" name="input-base" id="input-hexadecimal">
+            <label for="input-hexadecimal">HEX <span id="span-input-16" title="16">0</span></label>
+            <br>
+            <input type="radio" name="input-base" id="input-decimal">
+            <label for="input-decimal">DEC <span id="span-input-10" title="10">0</span></label>
+            <br>
+            <input type="radio" name="input-base" id="input-octal">
+            <label for="input-octal">OCT <span id="span-input-8" title="8">0</span></label>
+            <br>
+            <input type="radio" name="input-base" id="input-binario">
+            <label for="input-binario">BIN <span id="span-input-2" title="2">0</span></label>
+        </div>
+            
+
+        <div class="botones">
+            <button class="boton" id="boton7">7</button>
+            <button class="boton" id="boton8">8</button>
+            <button class="boton" id="boton9">9</button>
+            <button class="boton" id="botonDividir">/</button>
+            <button class="boton" id="boton4">4</button>
+            <button class="boton" id="boton5">5</button>
+            <button class="boton" id="boton6">6</button>
+            <button class="boton" id="botonMultiplicar">*</button>
+            <button class="boton" id="boton1">1</button>
+            <button class="boton" id="boton2">2</button>
+            <button class="boton" id="boton3">3</button>
+            <button class="boton" id="botonRestar">-</button>
+            <button class="boton" id="botonC">C</button>
+            <button class="boton" id="boton0">0</button>
+            <button class="boton" id="botonIgual">=</button>
+            <button class="boton" id="botonSumar">+</button>
+            <button class="boton" id="botonCE">CE</button>
+            <button class="boton" id="botonBorrar">←</button>
+
+        </div>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +63,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="div-resultados">
+        <input type="text" id="input-resultados" value="" disabled>
+        <br>
+        <input type="text" id="input-operaciones" value="">
+    </div>
+    <div>
+        <input type="radio" name="input-base" id="input-hexadecimal">
+        <label for="input-hexadecimal">HEX <span id="span-input-16" title="16">0</span></label>
+
+        <br>
+
+        <input type="radio" name="input-base" id="input-decimal">
+        <label for="input-decimal">DEC <span id="span-input-10" title="10">0</span></label>
+
+        <br>
+
+        <input type="radio" name="input-base" id="input-octal">
+        <label for="input-octal">OCT <span id="span-input-8" title="8">0</span></label>
+
+        <br>
+
+        <input type="radio" name="input-base" id="input-binario">
+        <label for="input-binario">BIN <span id="span-input-2" title="2">0</span></label>
+    </div>
     <script src="main.js"></script>
 </body>
-</html>
+</html> 
